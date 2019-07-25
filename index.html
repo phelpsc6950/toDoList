@@ -1,1 +1,18 @@
-<!--placeholder for index.html file-->
+<Doctype! html>
+<html>
+<body>
+  <!--Create Input Area-->
+  <div id="inputBox" class="header">    
+    <h1>My To Do List</h1>
+    <input type = text id="userListInput" placeholder="Please Type A Task">
+    <button id = "input" onclick = "newListItem()" class="addBtn">Add Task To List</button>
+  </div>
+  <!--Create Buttons-->
+  <p><button id = "viewAll" onclick = "viewAll()"> View All Tasks</button><button id = "closeViewAll" onclick = "closeViewAll()">Hide List</button></p>
+  <div id="allTaskArea"></div>
+  <p><button id="viewIncomplete" onclick ="viewIncomplete()">View Incomplete Tasks</button><button id = "closeIncomplete" onclick = "closeIncomplete()">Hide List</button></p>
+  <div id = "incompleteArea"></div>
+  <p><button id="viewComplete" onclick = "viewCompletedList()">View Completed Tasks</button><button id = "closeComplete" onclick = "closeComplete()">Hide List</button></p>
+  <div id= "completeArea"></div>  
+</body>
+</html>
